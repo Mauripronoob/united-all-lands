@@ -1,40 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Crónicas de United All Lands</title>
   <style>
     body {
+      margin: 0;
       background-color: #f8f1dc;
       font-family: 'Georgia', serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      color: #3b2f1c;
     }
-    .container {
-      background-color: #f3e2b9;
-      padding: 20px;
-      border: 8px solid #8b5a2b;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    .book {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .cover {
       text-align: center;
+      margin-bottom: 50px;
     }
-    .container img {
+    .cover img {
       max-width: 100%;
       height: auto;
+      border: 4px solid #5b3b1c;
       margin-bottom: 20px;
     }
-    h1 {
-      font-size: 2.5em;
-      color: #4b3621;
+    h1.title {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    .index {
+      background-color: #f3e2b9;
+      padding: 20px;
+      border: 2px solid #a68454;
+      border-radius: 10px;
+      margin-bottom: 60px;
+    }
+    .index h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .index ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2em;
+    }
+    .index li {
+      margin: 10px 0;
+    }
+    .index a {
+      text-decoration: none;
+      color: #5a3d1e;
+    }
+    .index a:hover {
+      text-decoration: underline;
+    }
+    .chapter {
+      background-color: #fff9ec;
+      padding: 30px;
+      border: 2px solid #c2a66c;
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+    .chapter h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #a68454;
+      padding-bottom: 5px;
+    }
+    .chapter p {
+      text-align: justify;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="portada_cronicas_united_all_lands.jpg" alt="Portada del libro medieval">
-    <h1>Crónicas de United All Lands</h1>
+  <div class="book">
+    <div class="cover">
+      <img src="portada_cronicas_united_all_lands.jpg" alt="Portada del libro medieval">
+      <h1 class="title">Crónicas de United All Lands</h1>
+    </div>
+
+    <div class="index">
+      <h2>Índice del Códice</h2>
+      <ul>
+        <li><a href="#capitulo1">Capítulo I: Los Hermanos</a></li>
+        <li><a href="#capitulo2">Capítulo II: El Dragón Esmeralda</a></li>
+        <li><a href="#capitulo3">Capítulo III: Alianza Prematura</a></li>
+      </ul>
+    </div>
+
+    <div class="chapter" id="capitulo1">
+      <h2>Capítulo I: Los Hermanos</h2>
+      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, horrores nocturnos y criaturas capaces de arrasar aldeas enteras en un abrir y cerrar de ojos. Tan poderosos y temibles fueron, que aun cuando sus cuerpos cayeron, sus nombres sobrevivieron al tiempo.</p>
+
+      <p>En medio de aquellas épocas turbulentas, nació una historia que cambiaría el rumbo del continente. En la apacible aldea de <strong>Atenea Village</strong>, dos hermanos vinieron al mundo: <em>Atlas</em> y <em>Axis</em>. Hijos de padres humildes y trabajadores, criados en la pobreza y el olvido bajo el dominio del monarca <strong>Beltrán</strong>, un soberano que exprimía las riquezas del pueblo para alimentar festines y banquetes, ignorando el hambre de su gente.</p>
+
+      <p>Cada atardecer, los hermanos compartían un trozo de pan, más valioso que cualquier joya, escondidos del juicio ajeno. Su única dicha provenía del cariño de un matrimonio de ancianos sin hijos, los amables <strong>Castillo</strong>, Rosa y Martín, quienes los trataron como nietos. Cuando ellos partieron de este mundo, lo hicieron tomados de la mano, y dejaron tras de sí un vacío imborrable en los corazones de los jóvenes.</p>
+
+      <p>Sus padres, consumidos por el trabajo, hicieron lo posible por mantener a flote su hogar: la madre, dedicada a la textilería; el padre, guardia imperial aspirante, ausente y silencioso. A pesar de las adversidades, Atlas y Axis crecieron inseparables. El primero, fuerte y decidido; el segundo, empático e inteligente. Dos almas distintas, unidas por el mismo fuego de resistencia.</p>
+
+      <p>Ambos deseaban cambiar el mundo, derrocar al futuro emperador <strong>Valentino III</strong>, hijo de Beltrán y prometido de la enigmática <strong>Elizabeth II</strong>. La princesa, noble en su esencia, rompió el protocolo en más de una ocasión para ayudar al pueblo, y fue ella quien salvó a la madre de los hermanos al llevar medicamentos en secreto. Agradecidos, Atlas y Axis juraron volverse los mejores guardias del imperio, para honrar su gesto... o quizás, por sentimientos más profundos que no sabían cómo nombrar.</p>
+
+      <p>Con el invierno y la miseria acechando nuevamente, los hermanos emprendieron una travesía hacia las <strong>montañas Muerto Pendiente</strong>, territorio hostil y hogar de bestias olvidadas. Allí, en medio de la nieve y la niebla, el destino les revelaría algo que cambiaría sus vidas para siempre…</p>
+    </div>
   </div>
 </body>
 </html>
