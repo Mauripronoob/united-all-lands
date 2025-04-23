@@ -53,7 +53,10 @@
 </head>
 <body>
   <div id="flipbook">
-    <div class="page centered"><img src="images/portada.jpg" alt="Portada"></div>
+    <!-- Portada -->
+    <div class="page centered"><img src="images/portada.jpg" alt="Portada del libro"></div>
+    
+    <!-- Título + Índice -->
     <div class="page">
       <h1>Crónicas de United All Lands</h1>
       <ul>
@@ -62,25 +65,71 @@
         <li><a href="#3">Capítulo III: Alianza Prematura</a></li>
       </ul>
     </div>
+
+    <!-- Capítulo I -->
     <div class="page">
       <h1 id="1">Capítulo I: Los Hermanos</h1>
-      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, horrores nocturnos y criaturas capaces de arrasar aldeas enteras en un abrir y cerrar de ojos...</p>
-      <p>En la aldea de Atenea Village nacieron Atlas y Axis...</p>
+      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, monstruos que daban horrores a los mineros, monstruos capaces de arrasar aldeas enteras en un abrir y cerrar de ojos.</p>
+      <p>Dos hermanos que nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------, tuvieron una infancia difícil, la pobreza era algo que abundaba en este pueblo, aquel monarca llamado “Beltrán” era repudiable, usaba las riquezas y ganancias del pueblo, para simples festines y fiestas cada día y noche.</p>
     </div>
+
     <div class="page"><img src="images/pueblo.png" alt="Pueblo Atenea Village"></div>
+
+    <div class="page">
+      <p>Cada atardecer los hermanos comían un trozo de pan, cosa que podría valer más que decenas de joyas, claro, a escondidas de los demás, pero quien los miraría, si eran la familia más pobre y desdichada de todo el pueblo...</p>
+      <p>...gracias a un dulce matrimonio de ancianos, los Castillo: Rosa y Martín. No tenían hijos, pero trataban a los hermanos como si fueran sus nietos.</p>
+    </div>
+
+    <div class="page">
+      <p>La madre trabajaba en textilería, muchas veces volviendo a casa con los dedos heridos. El padre, ausente, pasaba el día entrenando como guardia imperial.</p>
+      <p>Atlas y Axis eran inseparables. Si uno peleaba, el otro se sumaba. Eran conocidos por eso, por jugar a golpes o a los espadazos con palos de madera. Su infancia era una contradicción hermosa.</p>
+    </div>
+
+    <div class="page">
+      <p>Con el tiempo, Rosa y Martín fallecieron. La tristeza inundó la casa de los hermanos. Ya no había quién les diera el pan al atardecer. La madre, sobrecargada, perdió su dulzura, y el padre... bueno, él al menos no estaba.</p>
+      <p>Los hermanos tomaron una decisión: se harían guardias imperiales, como su padre, y encontrarían el modo de cambiar el sistema corrupto.</p>
+    </div>
+
     <div class="page"><img src="images/princesa.png" alt="La princesa y los hermanos"></div>
+
+    <div class="page">
+      <p>Un día, su madre enfermó. No había dinero para medicinas. Rogaron a todos, incluso al príncipe Valentino III. Nadie ayudó. Nadie, excepto Elizabeth II. La princesa arriesgó su reputación por darles medicamentos. Se ganó su gratitud eterna.</p>
+      <p>—¡Queremos recompensarte! —le dijeron. Y ella respondió entre risas: —Entonces conviértanse en los mejores guardias imperiales.</p>
+    </div>
+
+    <!-- Capítulo II -->
     <div class="page">
       <h1 id="2">Capítulo II: El Dragón Esmeralda</h1>
-      <p>En las montañas Muerto Pendiente, los hermanos acampan buscando criaturas extraordinarias...</p>
+      <p>El invierno pasó. El hambre volvió. Decidieron salir al amanecer a las montañas “Muerto Pendiente”. Allí abundaban las bestias mágicas.</p>
+      <p>Acamparon. Y al despertar, un dragón verde, joven, estaba dentro de su carpa.</p>
     </div>
+
     <div class="page"><img src="images/amanecer.png" alt="Hermanos en el amanecer"></div>
+
     <div class="page">
-      <p>Un joven dragón esmeralda apareció en su carpa. Axis, con valentía, sanó su herida con magia. El vínculo estaba sellado.</p>
+      <p>Atlas intentó moverse lento. Axis pensaba en su báculo (que había dejado cerca del fuego, muy inteligente no fue). El dragón los observaba, pero no atacaba. Luego desapareció.</p>
+      <p>Más tarde, volvió. Traía una cicatriz en su espalda, con sangre roja. Extraño en un dragón. Axis sanó la herida con su magia.</p>
     </div>
+
     <div class="page"><img src="images/dragonverde.png" alt="Dragón herido con los hermanos"></div>
+
+    <div class="page">
+      <p>El dragón, en un gesto de gratitud, lamió a Axis. No era venenoso. No tenía "fuego en sangre". Solo era joven... y agradecido.</p>
+      <p>El vínculo había comenzado. Y en lo alto de las montañas, una alianza inesperada acababa de forjarse entre hermanos y dragón.</p>
+    </div>
   </div>
+
   <script>
-    $('#flipbook').turn({ width: 960, height: 640, autoCenter: true });
+    $(function() {
+      $('#flipbook').turn({
+        width: 960,
+        height: 640,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true,
+        duration: 1000
+      });
+    });
   </script>
 </body>
 </html>
