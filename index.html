@@ -1,1 +1,86 @@
-<!-- HTML completo generado anteriormente -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crónicas de United All Lands</title>
+  <style>
+    body {
+      background: #111;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    #flipbook {
+      width: 960px;
+      height: 640px;
+    }
+    .page {
+      background: url('images/parchment.jpg') no-repeat center center;
+      background-size: cover;
+      color: #3b2f1c;
+      font-family: 'Georgia', serif;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+    .page h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .page p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .page img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+    .centered {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-direction: column;
+    }
+  </style>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/turn.min.js"></script>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page centered"><img src="images/portada.jpg" alt="Portada"></div>
+    <div class="page">
+      <h1>Crónicas de United All Lands</h1>
+      <ul>
+        <li><a href="#1">Capítulo I: Los Hermanos</a></li>
+        <li><a href="#2">Capítulo II: El Dragón Esmeralda</a></li>
+        <li><a href="#3">Capítulo III: Alianza Prematura</a></li>
+      </ul>
+    </div>
+    <div class="page">
+      <h1 id="1">Capítulo I: Los Hermanos</h1>
+      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, horrores nocturnos y criaturas capaces de arrasar aldeas enteras en un abrir y cerrar de ojos...</p>
+      <p>En la aldea de Atenea Village nacieron Atlas y Axis...</p>
+    </div>
+    <div class="page"><img src="images/pueblo.png" alt="Pueblo Atenea Village"></div>
+    <div class="page"><img src="images/princesa.png" alt="La princesa y los hermanos"></div>
+    <div class="page">
+      <h1 id="2">Capítulo II: El Dragón Esmeralda</h1>
+      <p>En las montañas Muerto Pendiente, los hermanos acampan buscando criaturas extraordinarias...</p>
+    </div>
+    <div class="page"><img src="images/amanecer.png" alt="Hermanos en el amanecer"></div>
+    <div class="page">
+      <p>Un joven dragón esmeralda apareció en su carpa. Axis, con valentía, sanó su herida con magia. El vínculo estaba sellado.</p>
+    </div>
+    <div class="page"><img src="images/dragonverde.png" alt="Dragón herido con los hermanos"></div>
+  </div>
+  <script>
+    $('#flipbook').turn({ width: 960, height: 640, autoCenter: true });
+  </script>
+</body>
+</html>
