@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -25,6 +24,9 @@
       font-family: 'Georgia', serif;
       padding: 40px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .page h1 {
       font-size: 2em;
@@ -39,6 +41,7 @@
       max-width: 100%;
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      margin-top: 20px;
     }
     .centered {
       display: flex;
@@ -48,24 +51,77 @@
       flex-direction: column;
     }
   </style>
+
+  <!-- Cargar jQuery y Turn.js desde internet (CDN) -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@master/turn.min.js"></script>
+
 </head>
+
 <body>
   <div id="flipbook">
-    <div class="page centered"><img src="images/portada.jpg" alt="Portada del libro"></div>
+
+    <!-- Portada -->
+    <div class="page centered">
+      <img src="images/portada.jpg" alt="Portada del libro">
+    </div>
+
+    <!-- Índice -->
     <div class="page">
       <h1>Crónicas de United All Lands</h1>
       <ul>
         <li><a href="#1">Capítulo I: Los Hermanos</a></li>
         <li><a href="#2">Capítulo II: El Dragón Esmeralda</a></li>
-        <li><a href="#3">Capítulo III: Alianza Prematura</a></li>
       </ul>
     </div>
+
+    <!-- Capítulo I: Inicio -->
     <div class="page">
       <h1 id="1">Capítulo I: Los Hermanos</h1>
       <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, monstruos que daban horrores a los mineros, monstruos capaces de arrasar aldeas enteras en un abrir y cerrar de ojos.</p>
       <p>Existieron ese tipo de monstruos, tan poderosos, tan temibles y tan recordados que nunca nadie pensó que algún día todos caerían.</p>
-      <p>Dos hermanos que nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------, tuvieron una infancia difícil, la pobreza era algo que abundaba en este pueblo, aquel monarca llamado “Beltrán” era repudiable, usaba las riquezas y ganancias del pueblo, para simples festines y fiestas cada día y noche.</p>
+      <img src="images/pueblo.png" alt="Pueblo Atenea Village">
     </div>
-    <div class="page"><img src="images/pueblo.png" alt="Pueblo Atenea Village"></div>
+
+    <div class="page">
+      <p>Dos hermanos nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------. Su infancia fue dura. La pobreza era su día a día. El monarca Beltrán gobernaba para su propio beneficio, dejando al pueblo en la miseria.</p>
+      <p>La familia Castillo, unos ancianos bondadosos, los ayudaba a sobrevivir. Su madre trabajaba en la textilería, volviendo a casa con las manos heridas. Su padre, casi siempre ausente, entrenaba como guardia imperial.</p>
+      <img src="images/princesa.png" alt="La princesa y los hermanos">
+    </div>
+
+    <!-- Capítulo II -->
+    <div class="page">
+      <h1 id="2">Capítulo II: El Dragón Esmeralda</h1>
+      <p>Los hermanos, ya jóvenes adultos, anhelaban derrocar la tiranía. Soñaban con ser algo más. Viajaron hacia las montañas “Muerto Pendiente”, en busca de experiencia, caza y gloria.</p>
+      <p>En el frío amanecer, acamparon entre nieblas densas. El destino los esperaba.</p>
+      <img src="images/amanecer.png" alt="Hermanos en el amanecer">
+    </div>
+
+    <div class="page">
+      <p>Al despertar, encontraron dentro de su tienda a un pequeño dragón verde herido. Temiendo lo peor, prepararon sus armas... pero el dragón no los atacó.</p>
+      <p>Observándolos con ojos cansados, mostraba una gran herida en su espalda.</p>
+      <img src="images/dragonverde.png" alt="Dragón herido con los hermanos">
+    </div>
+
+    <div class="page">
+      <p>Axis, guiado por su empatía, decidió sanar al dragón usando su báculo mágico. Atlas, aunque receloso, confió en su hermano.</p>
+      <p>Tras sanar la herida, el dragón lamió la mejilla de Axis en señal de gratitud, formando así una alianza inesperada.</p>
+    </div>
+
+  </div>
+
+  <script>
+    $(window).on('load', function() {
+      $('#flipbook').turn({
+        width: 960,
+        height: 640,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true,
+        duration: 1000
+      });
+    });
+  </script>
+
+</body>
+</html>
