@@ -52,7 +52,7 @@
     }
   </style>
 
-  <!-- Cargar jQuery y Turn.js desde internet (CDN) -->
+  <!-- Librerías -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@master/turn.min.js"></script>
 
@@ -85,7 +85,7 @@
 
     <div class="page">
       <p>Dos hermanos nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------. Su infancia fue dura. La pobreza era su día a día. El monarca Beltrán gobernaba para su propio beneficio, dejando al pueblo en la miseria.</p>
-      <p>La familia Castillo, unos ancianos bondadosos, los ayudaba a sobrevivir. Su madre trabajaba en la textilería, volviendo a casa con las manos heridas. Su padre, casi siempre ausente, entrenaba como guardia imperial.</p>
+      <p>La familia Castillo, unos ancianos bondadosos, los ayudaba a sobrevivir. Su madre trabajaba en la textilería, volviendo a casa con los dedos heridos. Su padre, casi siempre ausente, entrenaba como guardia imperial.</p>
       <img src="images/princesa.png" alt="La princesa y los hermanos">
     </div>
 
@@ -105,11 +105,12 @@
 
     <div class="page">
       <p>Axis, guiado por su empatía, decidió sanar al dragón usando su báculo mágico. Atlas, aunque receloso, confió en su hermano.</p>
-      <p>Tras sanar la herida, el dragón lamió la mejilla de Axis en señal de gratitud, formando así una alianza inesperada.</p>
+      <p>Tras sanar la herida, el dragón lamió la mejilla de Axis en señal de gratitud, formando así el inicio de una alianza legendaria.</p>
     </div>
 
   </div>
 
+  <!-- Configuración Turn.js -->
   <script>
     $(window).on('load', function() {
       $('#flipbook').turn({
@@ -118,7 +119,8 @@
         autoCenter: true,
         elevation: 50,
         gradients: true,
-        duration: 1000
+        duration: 1000,
+        pages: 8 // 🔥 Ahora le decimos explícitamente cuántas páginas tenemos
       });
     });
   </script>
