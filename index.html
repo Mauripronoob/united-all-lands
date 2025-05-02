@@ -30,17 +30,13 @@
     }
     .page h1 {
       font-size: 2em;
-      margin-bottom: 10px;
     }
     .page p {
       font-size: 1.1em;
-      line-height: 1.6;
       text-align: justify;
     }
     .page img {
       max-width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
       margin-top: 20px;
     }
     .centered {
@@ -48,16 +44,11 @@
       justify-content: center;
       align-items: center;
       height: 100%;
-      flex-direction: column;
     }
   </style>
-
-  <!-- Librerías -->
   <script src="js/jquery.min.js"></script>
   <script src="js/turn.min.js"></script>
-
 </head>
-
 <body>
   <div id="flipbook">
 
@@ -71,59 +62,35 @@
       <h1>Crónicas de United All Lands</h1>
       <ul>
         <li><a href="#1">Capítulo I: Los Hermanos</a></li>
-        <li><a href="#2">Capítulo II: El Dragón Esmeralda</a></li>
       </ul>
     </div>
 
-    <!-- Capítulo I: Inicio -->
+    <!-- Página de historia -->
     <div class="page">
       <h1 id="1">Capítulo I: Los Hermanos</h1>
-      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, monstruos que daban horrores a los mineros, monstruos capaces de arrasar aldeas enteras en un abrir y cerrar de ojos.</p>
-      <p>Existieron ese tipo de monstruos, tan poderosos, tan temibles y tan recordados que nunca nadie pensó que algún día todos caerían.</p>
+      <p>Todo empezó hace mucho tiempo. Existieron monstruos voladores, horrores nocturnos y criaturas capaces de arrasar aldeas enteras.</p>
       <img src="images/pueblo.png" alt="Pueblo Atenea Village">
     </div>
 
+    <!-- Segunda página historia -->
     <div class="page">
-      <p>Dos hermanos nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------. Su infancia fue dura. La pobreza era su día a día. El monarca Beltrán gobernaba para su propio beneficio, dejando al pueblo en la miseria.</p>
-      <p>La familia Castillo, unos ancianos bondadosos, los ayudaba a sobrevivir. Su madre trabajaba en la textilería, volviendo a casa con los dedos heridos. Su padre, casi siempre ausente, entrenaba como guardia imperial.</p>
-      <img src="images/princesa.png" alt="La princesa y los hermanos">
-    </div>
-
-    <!-- Capítulo II -->
-    <div class="page">
-      <h1 id="2">Capítulo II: El Dragón Esmeralda</h1>
-      <p>Los hermanos, ya jóvenes adultos, anhelaban derrocar la tiranía. Soñaban con ser algo más. Viajaron hacia las montañas “Muerto Pendiente”, en busca de experiencia, caza y gloria.</p>
-      <p>En el frío amanecer, acamparon entre nieblas densas. El destino los esperaba.</p>
-      <img src="images/amanecer.png" alt="Hermanos en el amanecer">
-    </div>
-
-    <div class="page">
-      <p>Al despertar, encontraron dentro de su tienda a un pequeño dragón verde herido. Temiendo lo peor, prepararon sus armas... pero el dragón no los atacó.</p>
-      <p>Observándolos con ojos cansados, mostraba una gran herida en su espalda.</p>
-      <img src="images/dragonverde.png" alt="Dragón herido con los hermanos">
-    </div>
-
-    <div class="page">
-      <p>Axis, guiado por su empatía, decidió sanar al dragón usando su báculo mágico. Atlas, aunque receloso, confió en su hermano.</p>
-      <p>Tras sanar la herida, el dragón lamió la mejilla de Axis en señal de gratitud, formando así el inicio de una alianza legendaria.</p>
+      <p>Dos hermanos nacieron en el pueblo “Atenea Village”, hijos de ------- y de --------. Su infancia fue dura. La pobreza era su día a día. El monarca Beltrán gobernaba para su propio beneficio.</p>
+      <p>La familia Castillo, unos ancianos bondadosos, los ayudaba a sobrevivir. Su madre trabajaba en la textilería, su padre, casi siempre ausente, entrenaba como guardia imperial.</p>
     </div>
 
   </div>
 
-  <!-- Configuración Turn.js -->
   <script>
-    $(window).on('load', function() {
+    $(window).on('load', function () {
       $('#flipbook').turn({
         width: 960,
         height: 640,
         autoCenter: true,
         elevation: 50,
         gradients: true,
-        duration: 1000,
-        pages: 8 // 🔥 Ahora le decimos explícitamente cuántas páginas tenemos
+        duration: 1000
       });
     });
   </script>
-
 </body>
 </html>
